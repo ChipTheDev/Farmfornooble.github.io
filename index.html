@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Embed Nooble 20 Times</title>
+    <meta http-equiv="refresh" content="2"> <!-- Refreshes every 2 seconds -->
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: black;
+        }
+        iframe {
+            width: 700px; /* Large size */
+            height: 700px;
+            margin: 10px;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        for (let i = 0; i < 20; i++) { // Only 20 iframes
+            document.write('<iframe src="https://nooble.github.io" loading="lazy"></iframe>');
+        }
+    </script>
+</body>
+</html>
